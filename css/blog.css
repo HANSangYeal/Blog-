@@ -24,20 +24,21 @@
 
 .wrapper{width: 100%; height: 1000px; background-color: var(--wrapper-color);}
 	.wrapper2{width: 90%; height: 100%; background-color: var(--wrapper-color); margin: auto;}
-		.rightMenu{width: 15%; height: 1000px; background-color: var(--right-menu-color); float: left;}
+		.leftMenu{width: 15%; height: 1000px; background-color: var(--right-menu-color); float: left;}
 			.mainLogo{width: 100%; height: 10%; background-color: ivory; float: left;}
 			.navMenuBar{width: 100%; height: 90%; float: left; 
 						background-color: var(--nav-Menu-color);}
 				.navMenu{width: 100%; height: 33%; 
 						  border-bottom-width: 1px;
 						  border-bottom-style: solid;
-						  border-bottom-color: black;}
-		.middleMenu{width: 65%; height: 1000px; background-color: gray; float: left;}
-		.leftMenu{width: 20%; height :1000px; background-color: #99ff99; float: left;}
+						  border-bottom-color: black;
+						  text-align: center;}
+		.middleMenu{width: 65%; height: 1000px; background-color: gray; float: left; text-align: center;}
+		.rightMenu{width: 20%; height :1000px; background-color: #99ff99; float: left;}
 			p.theLatest{width: 100%; height: 40%; background-color: var(--left-Menu-color);
-						border-radius: 36px;}
+						border-radius: 36px; text-align: center;}
 			p.aboutMe{width: 100%; height: 30%; background-color: var(--left-Menu-color);
-					  border-radius: 36px;}
+					  border-radius: 36px; text-align: center;}
 			p.snsIconsLinks{width: 100%; height: 30%; background-color: var(--left-Menu-color);
-							border-radius: 36px;}
+							border-radius: 36px; text-align: center;}
 				

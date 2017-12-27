@@ -4,37 +4,65 @@
 	<title>BlogLayout</title>
 	<link rel="stylesheet" type="text/css" href="../css/blog.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
 </head>
 <body>
 
 	<div class="wrapper">
 		<div class="wrapper2">
-			<div class="rightMenu">
-				<div class="mainLogo"><a href="file:///C:/dev_sourse/Front/privateBlog/html/privateBlog.html">Main Logo</a></div>
+			<div class="leftMenu">
+				<div class="mainLogo">Main Logo</div>
 				<div class="navMenuBar">
-					<div class="navMenu">Menu1</div>
-					<div class="navMenu">Menu2</div>
-					<div class="navMenu">Menu3</div>
+					<div class="navMenu" id="1stMenu">Menu1</div>
+					<div class="navMenu" id="2ndMenu">Menu2</div>
+					<div class="navMenu" id="3rdMenu">Menu3</div>
 				</div>
 			</div>
 
 			<div class="middleMenu">MainContents</div>
 
-			<div class="leftMenu">
+			<div class="rightMenu">
 				<p class="theLatest">최신글 목록</p>
-				<p class="aboutMe"><a href="../ResumeHSY/index.html">ABOUT<br/>(Resume)</a></p>
+				<p id="aboutMe100" class="aboutMe">ABOUT<br/>(Resume)</p>
 				<p class="snsIconsLinks">SNS<br/><br/><br/><br/><br/>
-					<i class="fa fa-facebook" style="font-size: 60px; color: blue;"></i>
-					<i class="fa fa-twitter" style="font-size: 60px; color: blue;"></i>
-					<i class="fa fa-github" style="font-size: 60px; color: black;"></i>
+					<i id="fbIcon" class="fa fa-facebook" style="font-size: 60px; color: blue;"></i>
+					<i id="twIcon" class="fa fa-twitter" style="font-size: 60px; color: blue;"></i>
+					<i id="ghIcon" class="fa fa-github" style="font-size: 60px; color: black;"></i>
 				</p>
 			</div>
 		</div>
 	</div>
 	
 	<script>
-		
+		$(document).ready(function(){
+			$(".navMenu").click(function(){
+				var id = $(this).attr('id');
+				alert("id : " + id);
+			});
+		});
+
+		$("#fbIcon").on("click",function(){
+			alert('move facebook!');
+			location.href = "http://www.facebook.com/";
+		})
+
+		$("#twIcon").on("click",function(){
+			alert('move twitter!');
+			location.href = "https://twitter.com/";
+		})
+
+		$("#ghIcon").on("click",function(){
+			alert('move my Github!');
+			location.href = "https://github.com/HANSangYeal/";
+		})
+
+		$("#aboutMe100").on("click",function(){
+			alert('clicked!');
+			location.href = "../ResumeHSY/index.html/";
+		})
+
+
 	</script>	
 </body>
 </html>
