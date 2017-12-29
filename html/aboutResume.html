@@ -25,57 +25,41 @@
 			<div class="leftMenu">
 				<div class="mainLogo">Main Logo</div>
 				<div class="navMenuBar">
-					<div class="navMenu" id="1stMenu">Menu1</div>
-					<div class="navMenu" id="2ndMenu">Menu2</div>
-					<div class="navMenu" id="3rdMenu">Menu3</div>
+					<ul class="navMenus">
+						<li class="navMenu"><a href="#">Menu1</a>
+							<ul>
+								<li><a href="#">Menu1-1</a></li>
+								<li><a href="#">Menu1-2</a></li>
+								<li><a href="#">Menu1-3</a></li>
+							</ul>
+						</li>	
+						<li class="navMenu"><a href="#">Menu2</a>
+							<ul>
+								<li><a href="#">Menu2-1</a></li>
+								<li><a href="#">Menu2-2</a></li>
+								<li><a href="#">Menu2-3</a></li>
+							</ul>
+						</li>	
+						<li class="navMenu"><a href="#">Menu3</a>
+							<ul>
+								<li><a href="#">Menu3-1</a></li>
+								<li><a href="#">Menu3-2</a></li>
+								<li><a href="#">Menu3-3</a></li>
+							</ul>
+						</li>
+					</ul>	
 				</div>
 			</div>
 
-			<div class="middleMenu"><br/>
-				<div class="myName">
-					<span class="firstName">SANG-YEAL</span>
-					<span class="lastName">HAN</span>
-				</div>
-				<i class="myAddress">Suseng road 38 Street Daegu</i>
-				<i class="myE-mail">syhan9865@gmail.com</i><br/><br/>
-				<div class="headLines">Experience</div>
-					<div class="subHeads">Poem and Picture galere</div>
-					<i class="texts">Experience in creative activities and exhibition actibities by joining a Poem and Picture galere in high school.</i>
-					<div class="subHeads">Labor scholar working</div>
-					<i class="texts">Dr.Kosodo with worked as a research assistant in Korea Brain Research Institute.</i><br/>
-				<div class="headLines">Education</div>
-					<div class="subHeads">University of Daegu</div>
-					<i class="texts">Department of Japanese Language and Studies (March 2012 - Present)</i><br/>
-				<div class="headLines">Skills</div>
-					<div class="subHeads">Programming Languages &amp; Tools</div>
-						<ul class="list-inline list-icons">
-				            <li class="list-inline-item">
-				              <i class="devicons devicons-html5"></i>
-				            </li>
-				            <li class="list-inline-item">
-				              <i class="devicons devicons-css3"></i>
-				            </li>
-				            <li class="list-inline-item">
-				              <i class="devicons devicons-javascript"></i>
-				            </li>
-				            <li class="list-inline-item">
-				              <i class="devicons devicons-jquery"></i>
-				            </li>
-				            <li class="list-inline-item">
-				              <i class="devicons devicons-bootstrap"></i>
-				            </li>
-				            <li class="list-inline-item">
-				              <i class="devicons devicons-wordpress"></i>
-				            </li>
-			          </ul>						
-			</div>
+			<div class="middleMenu"><br/>Main Contents</div>
+
 			<div class="rightMenu">
 				<div class="theLatest"><b><br/>최신글 목록</b><br/>
 					<div class="latestMenu"> 긴 글이 나왔을 때 내가 원하는대로 나오는지 시험하기 위한 텍스트 긴 글이 나왔을 때 내가 원하는대로 나오는지 시험하기 위한 텍스트 긴 글이 나왔을 때 내가 원하는대로 나오는지 시험하기 위한 텍스트 긴 글이 나왔을 때 내가 원하는대로 나오는지 시험하기 위한 텍스트 긴 글이 나왔을 때 내가 원하는대로 나오는지 시험하기 위한 텍스트</div><br/>
 					<div class="latestMenu2"> 긴 글이 나왔을 때 내가 원하는대로 나오는지 시험하기 위한 텍스트 긴 글이 나왔을 때 내가 원하는대로 나오는지 시험하기 위한 텍스트 긴 글이 나왔을 때 내가 원하는대로 나오는지 시험하기 위한 텍스트 긴 글이 나왔을 때 내가 원하는대로 나오는지 시험하기 위한 텍스트 긴 글이 나왔을 때 내가 원하는대로 나오는지 시험하기 위한 텍스트 긴 글이 나왔을 때 내가 원하는대로 나오는지 시험하기 위한 텍스트</div>
 				</div>
 				<div id="aboutMe100" class="aboutMe"><br/>ABOUT<br/>(Resume)</div>
-				<div class="snsIconsLinks"><br/>SNS<br/>
+				<div class="snsIconsLinks"><br/>SNS<br/><br/>
 					<i id="fbIcon" class="fa fa-facebook" style="font-size: 60px; color: blue;"></i><br/>
 					<i id="twIcon" class="fa fa-twitter" style="font-size: 60px; color: #1a53ff;"></i><br/>
 					<i id="ghIcon" class="fa fa-github" style="font-size: 60px; color: black;"></i>
@@ -86,26 +70,36 @@
 	
 	<script>
 		$(document).ready(function(){
-			$(".navMenu").click(function(){
-				var id = $(this).attr('id');
-				alert("id : " + id);
+			$("#fbIcon").on("click",function(){
+				alert('move facebook!');
+				location.href = "https://www.facebook.com/?sk=welcome";
+			});
+
+			$("#twIcon").on("click",function(){
+				alert('move twitter!');
+				location.href = "https://twitter.com/hbk9865";
+			});
+
+			$("#ghIcon").on("click",function(){
+				alert('move my Github!');
+				location.href = "https://github.com/HANSangYeal/";
+			});
+
+			$("#aboutMe100").on("click",function(){
+				alert('move!');
+				location.href = "./aboutResume.html";
+			});
+			// nav-menu 클래스에 마우스 호버링 시
+			$(".navMenus li").hover(function(){
+				// 해당 li 태그에 속한 ul 태그를 보여준다
+				$("ul:first",this).show();
+			}, function(){
+				// 마우스 뗐을 때 : 숨긴다.
+				$("ul:first",this).hide();
 			});
 		});
 
-		$("#fbIcon").on("click",function(){
-			alert('move facebook!');
-			location.href = "https://www.facebook.com/?sk=welcome";
-		})
-
-		$("#twIcon").on("click",function(){
-			alert('move twitter!');
-			location.href = "https://twitter.com/hbk9865";
-		})
-
-		$("#ghIcon").on("click",function(){
-			alert('move my Github!');
-			location.href = "https://github.com/HANSangYeal/";
-		})
+		
 
 
 	</script>	

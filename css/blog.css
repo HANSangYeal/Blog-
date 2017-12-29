@@ -23,7 +23,6 @@
 .navMenus li:hover>a{color: white;}
 .navMenus ul li:hover{background-color: #cc66ff; float: none;}
 .navMenus ul li:hover a{color: white;}
-/*.navMenu:hover{color: white; background-color: #cc66ff;}*/
 .theLatest:hover{color: white; background-color: var(--left-hover-color);}
 .aboutMe:hover{color: white; background-color: var(--left-hover-color);}
 .snsIconsLinks:hover{color: white; background-color: var(--left-hover-color);}
@@ -33,23 +32,18 @@
 
 .wrapper{width: 100%; height: 1000px; background-color: var(--wrapper-color);}
 	.wrapper2{width: 90%; height: 100%; background-color: var(--wrapper-color); margin: auto;}
-		.leftMenu{width: 15%; height: 1000px; background-color: var(--right-menu-color); float: left;}
-			.mainLogo{width: 100%; height: 10%; background-color: ivory; float: left;}
+		.leftMenu{width: 15%; height: 1000px; float: left;}
+			.mainLogo{width: 100%; height: 10%; float: left;}
 			.navMenuBar{display: inline-block; width: 100%; height: 90%; background-color: var(--nav-Menu-color);}
 				.navMenus{margin: 0; padding: 0;}
 				.navMenus li{list-style: none; position: relative;}
 				.navMenus a{color: black; display: block; padding: 10px 20px; text-decoration: none;}
 				.navMenus ul{background-color: var(--nav-Menu-color); display: none; padding: 0; position: absolute; left: 100%; top: 0%; width: 100%;}
 				.navMenus ul li{float: none;}
-					/*.navMenu{width: 100%; height: 33%; 
-							 border-bottom-width: 1px;
-							 border-bottom-style: solid;
-						     border-bottom-color: black;
-						     text-align: center;}*/
 		.middleMenu{width: 65%; height: 1000px; background-color: gray; 
 					float: left; text-align: center; text-shadow: 2px 2px 5px white;
 					font-size: 50px;}
-		.rightMenu{width: 20%; height :1000px; background-color: #99ff99; float: left;}
+		.rightMenu{width: 20%; height :1000px; float: left;}
 			.theLatest{width: 100%; height: 40%; background-color: var(--left-Menu-color);
 					   border-radius: 36px; text-align: center;}
 				.latestMenu{background-color: var(--latest-menu-color); color: var(--latest-text-color); 
