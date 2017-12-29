@@ -1,0 +1,13 @@
+.list-inline-item i:hover {color: #e62e00; }
+
+.middleMenu{text-align: left;}
+	.firstName{font-size: 50px; font-weight: 700; font-family: Arial, Helvetica, sans-serif;}
+	.lastName{font-size: 50px; font-weight: 700; font-family: Arial, Helvetica, sans-serif; color: #e62e00;}
+	.myAddress{font-size: 25px;}
+	.myE-mail{font-size: 25px; color: #e62e00;}
+	.headLines{font-size: 35px; font-weight: 500; font-family: Arial, Helvetica, sans-serif; line-height: 1.5rem;}
+	.subHeads{font-size: 30px; font-weight: 300; color: #e62e00;}
+	.texts{font-size: 25px; font-weight: 200; line-height: 0.5rem;}
+	.list-inline-item i{font-size: 70px;}
+
+

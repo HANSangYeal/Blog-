@@ -14,16 +14,36 @@
 			<div class="leftMenu">
 				<div class="mainLogo">Main Logo</div>
 				<div class="navMenuBar">
-					<div class="navMenu" id="1stMenu">Menu1</div>
-					<div class="navMenu" id="2ndMenu">Menu2</div>
-					<div class="navMenu" id="3rdMenu">Menu3</div>
+					<ul class="navMenus">
+						<li class="navMenu"><a href="#">Menu1</a>
+							<ul>
+								<li><a href="#">Menu1-1</a></li>
+								<li><a href="#">Menu1-2</a></li>
+								<li><a href="#">Menu1-3</a></li>
+							</ul>
+						</li>	
+						<li class="navMenu"><a href="#">Menu2</a>
+							<ul>
+								<li><a href="#">Menu2-1</a></li>
+								<li><a href="#">Menu2-2</a></li>
+								<li><a href="#">Menu2-3</a></li>
+							</ul>
+						</li>	
+						<li class="navMenu"><a href="#">Menu3</a>
+							<ul>
+								<li><a href="#">Menu3-1</a></li>
+								<li><a href="#">Menu3-2</a></li>
+								<li><a href="#">Menu3-3</a></li>
+							</ul>
+						</li>
+					</ul>	
 				</div>
 			</div>
 
 			<div class="middleMenu"><br/>Main Contents</div>
 
 			<div class="rightMenu">
-				<div class="theLatest"><b><br/>최신글 목록</b><br/><br/>
+				<div class="theLatest"><b><br/>최신글 목록</b><br/>
 					<div class="latestMenu"> 긴 글이 나왔을 때 내가 원하는대로 나오는지 시험하기 위한 텍스트 긴 글이 나왔을 때 내가 원하는대로 나오는지 시험하기 위한 텍스트 긴 글이 나왔을 때 내가 원하는대로 나오는지 시험하기 위한 텍스트 긴 글이 나왔을 때 내가 원하는대로 나오는지 시험하기 위한 텍스트 긴 글이 나왔을 때 내가 원하는대로 나오는지 시험하기 위한 텍스트</div><br/>
 					<div class="latestMenu2"> 긴 글이 나왔을 때 내가 원하는대로 나오는지 시험하기 위한 텍스트 긴 글이 나왔을 때 내가 원하는대로 나오는지 시험하기 위한 텍스트 긴 글이 나왔을 때 내가 원하는대로 나오는지 시험하기 위한 텍스트 긴 글이 나왔을 때 내가 원하는대로 나오는지 시험하기 위한 텍스트 긴 글이 나왔을 때 내가 원하는대로 나오는지 시험하기 위한 텍스트 긴 글이 나왔을 때 내가 원하는대로 나오는지 시험하기 위한 텍스트</div>
 				</div>
@@ -39,31 +59,36 @@
 	
 	<script>
 		$(document).ready(function(){
-			$(".navMenu").click(function(){
-				var id = $(this).attr('id');
-				alert("id : " + id);
+			$("#fbIcon").on("click",function(){
+				alert('move facebook!');
+				location.href = "https://www.facebook.com/?sk=welcome";
+			});
+
+			$("#twIcon").on("click",function(){
+				alert('move twitter!');
+				location.href = "https://twitter.com/hbk9865";
+			});
+
+			$("#ghIcon").on("click",function(){
+				alert('move my Github!');
+				location.href = "https://github.com/HANSangYeal/";
+			});
+
+			$("#aboutMe100").on("click",function(){
+				alert('move!');
+				location.href = "./aboutResume.html";
+			});
+			// nav-menu 클래스에 마우스 호버링 시
+			$(".navMenus li").hover(function(){
+				// 해당 li 태그에 속한 ul 태그를 보여준다
+				$("ul:first",this).show();
+			}, function(){
+				// 마우스 뗐을 때 : 숨긴다.
+				$("ul:first",this).hide();
 			});
 		});
 
-		$("#fbIcon").on("click",function(){
-			alert('move facebook!');
-			location.href = "https://www.facebook.com/?sk=welcome";
-		})
-
-		$("#twIcon").on("click",function(){
-			alert('move twitter!');
-			location.href = "https://twitter.com/hbk9865";
-		})
-
-		$("#ghIcon").on("click",function(){
-			alert('move my Github!');
-			location.href = "https://github.com/HANSangYeal/";
-		})
-
-		$("#aboutMe100").on("click",function(){
-			alert('move!');
-			location.href = "./aboutResume.html";
-		})
+		
 
 
 	</script>	
