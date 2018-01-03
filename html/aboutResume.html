@@ -23,7 +23,9 @@
 	<div class="wrapper">
 		<div class="wrapper2">
 			<div class="leftMenu">
-				<div class="mainLogo">Main Logo</div>
+				<div class="mainLogo">
+					<img class="logoImg" src="../img/mainLogo.png">
+				</div>
 				<div class="navMenuBar">
 					<ul class="navMenus">
 						<li class="navMenu"><a href="#">Menu1</a>
@@ -106,6 +108,11 @@
 	
 	<script>
 		$(document).ready(function(){
+			$(".logoImg").on("click",function(){
+				alert('move home!');
+				location.href = "file:///C:/dev_sourse/Front/privateBlog/html/privateBlog.html";
+			});
+
 			$("#fbIcon").on("click",function(){
 				alert('move facebook!');
 				location.href = "https://www.facebook.com/?sk=welcome";
