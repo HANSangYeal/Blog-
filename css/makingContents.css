@@ -3,6 +3,6 @@
 	.iuputTitle{width: 100%; height: 5%;}
 		.writeTitle{width: 100%; height: 100%;}
 	.inputKategorie{width: 100%; height: 20%;}
-		.kategories{height: 20%;}
-	.inputText{width: 100%; height: 40%;}
-		.writeText{width: 100%; height: 100%; padding: 15px;}
+		.kategories{width: 100%; height: 20%;}
+	.inputText{width: 100%; height: 45%;}
+		.writeText{width: 100%; height: 100%; overflow: scroll; font-size: 30px;}

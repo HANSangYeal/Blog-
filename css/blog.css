@@ -1,9 +1,8 @@
 :root {
-	--wrapper-color : beige;
-	--right-menu-color : khaki;
-	--nav-Menu-color : #00ccff;
-	--left-Menu-color : #33cccc;
-	--left-hover-color : #0099cc;
+	--wrapper-color : #ff6666;
+	--nav-Menu-color : linear-gradient(to left, #d66d75, #e29587);;
+	--right-Menu-color : #33cccc;
+	--right-hover-color : #0099cc;
 	--latest-menu-color : #4CAF50;
 	--latest-text-color : white;
 }
@@ -11,6 +10,7 @@
 
 *{	
 	margin: 0;
+	padding: 0;
 	font-family: "Times New Roma", Times, serif;
 	font-size: 30px;
 	
@@ -19,14 +19,14 @@
 
 
 .mainLogo:hover{background-color: gray;}
-.navMenus li:hover{background-color: #cc66ff; z-index: 3;}
+.navMenus li:hover{background: linear-gradient(to right, #f4c4f3, #fc67fa); z-index: 3;}
 .navMenus li:hover>a{color: white;}
-.navMenus ul li:hover{background-color: #cc66ff; float: none;}
+.navMenus ul li:hover{background: linear-gradient(to right, #f4c4f3, #fc67fa); float: none;}
 .navMenus ul li:hover a{color: white;}
 .makingButton:active{transform: translateY(4px);}
-.theLatest:hover{color: white; background-color: var(--left-hover-color);}
-.aboutMe:hover{color: white; background-color: var(--left-hover-color);}
-.snsIconsLinks:hover{color: white; background-color: var(--left-hover-color);}
+.theLatest:hover{color: white; background-color: var(--right-hover-color);}
+.aboutMe:hover{color: white; background-color: var(--right-hover-color);}
+.snsIconsLinks:hover{color: white; background-color: var(--right-hover-color);}
 
 
 
@@ -36,22 +36,22 @@
 		.leftMenu{width: 15%; height: 1000px; float: left;}
 			.mainLogo{width: 100%; height: 10%; float: left;}
 				.logoImg{width: 100%; height: 100%; z-index: 2;}
-			.navMenuBar{display: inline-block; width: 100%; height: 90%; background-color: var(--nav-Menu-color);}
+			.navMenuBar{display: inline-block; width: 100%; height: 90%; background: var(--nav-Menu-color);}
 				.navMenus{margin: 0; padding: 0;}
 				.navMenus li{list-style: none; position: relative;}
 				.navMenus a{color: black; display: block; padding: 10px 20px; text-decoration: none;}
-				.navMenus ul{background-color: var(--nav-Menu-color); display: none; padding: 0; position: absolute; left: 100%; top: 0%; width: 100%;}
+				.navMenus ul{background: var(--nav-Menu-color); display: none; padding: 0; position: absolute; left: 100%; top: 0%; width: 100%;}
 				.navMenus ul li{float: none;}
 				.makingButton{display: inline-block; cursor: pointer; border-radius: 15px;}
 		.middleMenu{width: 65%; height: 1000px; background-color: gray; 
 					float: left; text-align: center; text-shadow: 2px 2px 5px white;
-					font-size: 50px; overflow: scroll;}
+					font-size: 50px; overflow: auto;}
 			.quarter{display: inline-block; width: 25%; height: 50%; margin: 0 auto; box-sizing: border-box;}
 				.quarterImg{width: 100%; height: 200px;}
 				.titleHeading{overflow: hidden; text-overflow: ellipsis;}
 				.substance{overflow: hidden; text-overflow: ellipsis;}
 		.rightMenu{width: 20%; height :1000px; float: left;}
-			.theLatest{width: 100%; height: 40%; background-color: var(--left-Menu-color);
+			.theLatest{width: 100%; height: 40%; background-color: var(--right-Menu-color);
 					   border-radius: 36px; text-align: center;}
 				.latestMenu{background-color: var(--latest-menu-color); color: var(--latest-text-color); 
 							width: 200px; height: 120px; border: 1px solid #ccc; font-size: 15px;
@@ -59,9 +59,9 @@
 				.latestMenu2{background-color: var(--latest-menu-color); color: var(--latest-text-color); 
 							 width: 200px; height: 120px; border: 1px solid #ccc; font-size: 15px;
 							 overflow: auto; position: relative; left: 20%;}	
-			.aboutMe{width: 100%; height: 30%; background-color: var(--left-Menu-color); font-size: 30px;
+			.aboutMe{width: 100%; height: 30%; background-color: var(--right-Menu-color); font-size: 30px;
 					 border-radius: 36px; text-align: center;}
-			.snsIconsLinks{width: 100%; height: 30%; background-color: var(--left-Menu-color);
+			.snsIconsLinks{width: 100%; height: 30%; background-color: var(--right-Menu-color);
 						   border-radius: 36px; text-align: center;}
 
 		
