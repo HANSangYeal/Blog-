@@ -5,6 +5,7 @@
 	<title>BlogLayout</title>
     <!-- Bootstrap core CSS -->
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="../js/blog.js"></script>
 
 	<link rel="stylesheet" type="text/css" href="../css/blog.css">
 	<link rel="stylesheet" type="text/css" href="../css/resume.css">
@@ -29,7 +30,7 @@
 				</div>
 				<div class="navMenuBar">
 					<ul class="navMenus">
-						<li class="navMenu"><a href="#">Menu1</a>
+						<!-- <li class="navMenu"><a href="#">Menu1</a>
 							<ul>
 								<li><a href="#">Menu1-1</a></li>
 								<li><a href="#">Menu1-2</a></li>
@@ -50,7 +51,7 @@
 								<li><a href="#">Menu3-3</a></li>
 							</ul>
 						</li>
-					</ul>	
+					</ul>	 -->
 				</div>
 			</div>
 
@@ -107,45 +108,6 @@
 		</div>
 	</div>
 	
-	<script>
-		$(document).ready(function(){
-			$(".logoImg").on("click",function(){
-				alert('move home!');
-				location.href = "file:///C:/dev_sourse/Front/privateBlog/html/privateBlog.html";
-			});
 
-			$("#fbIcon").on("click",function(){
-				alert('move facebook!');
-				location.href = "https://www.facebook.com/?sk=welcome";
-			});
-
-			$("#twIcon").on("click",function(){
-				alert('move twitter!');
-				location.href = "https://twitter.com/hbk9865";
-			});
-
-			$("#ghIcon").on("click",function(){
-				alert('move my Github!');
-				location.href = "https://github.com/HANSangYeal/";
-			});
-
-			$("#aboutMe100").on("click",function(){
-				alert('move!');
-				location.href = "./aboutResume.html";
-			});
-			// nav-menu 클래스에 마우스 호버링 시
-			$(".navMenus li").hover(function(){
-				// 해당 li 태그에 속한 ul 태그를 보여준다
-				$("ul:first",this).show();
-			}, function(){
-				// 마우스 뗐을 때 : 숨긴다.
-				$("ul:first",this).hide();
-			});
-		});
-
-		
-
-
-	</script>	
 </body>
 </html>

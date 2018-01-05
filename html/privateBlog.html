@@ -6,6 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="../css/blog.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	<script src="../js/blog.js"></script>
 
 </head>
 <body>
@@ -18,7 +19,7 @@
 				</div>
 				<div class="navMenuBar">
 					<ul class="navMenus">
-						<li class="navMenu"><a href="#">Menu1</a>
+<!-- 						<li class="navMenu"><a href="#">Menu1</a>
 							<ul>
 								<li><a href="#">Menu1-1</a></li>
 								<li><a href="#">Menu1-2</a></li>
@@ -38,7 +39,7 @@
 								<li><a href="#">Menu3-2</a></li>
 								<li><a href="#">Menu3-3</a></li>
 							</ul>
-						</li>
+						</li> -->
 					</ul><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 					<button class="makingButton">글쓰기</button>
 				</div>
@@ -92,52 +93,6 @@
 		</div>
 	</div>
 	
-	<script>
-		$(document).ready(function(){
-			$(".makingButton").on("click",function(){
-				location.href = "./makingContents.html";
-			});
 
-			$(".logoImg").on("click",function(){
-				alert('move home!');
-				location.href = "file:///C:/dev_sourse/Front/privateBlog/html/privateBlog.html";
-			});
-
-			$("#fbIcon").on("click",function(){
-				alert('move facebook!');
-				location.href = "https://www.facebook.com/?sk=welcome";
-			});
-
-			$("#twIcon").on("click",function(){
-				alert('move twitter!');
-				location.href = "https://twitter.com/hbk9865";
-			});
-
-			$("#ghIcon").on("click",function(){
-				alert('move my Github!');
-				location.href = "https://github.com/HANSangYeal/";
-			});
-
-			$("#aboutMe100").on("click",function(){
-				location.href = "./aboutResume.html";
-			});
-
-			$("#contentMenus001").on("click",function(){
-				location.href = "./read.html";
-			});
-			// nav-menu 클래스에 마우스 호버링 시
-			$(".navMenus li").hover(function(){
-				// 해당 li 태그에 속한 ul 태그를 보여준다
-				$("ul:first",this).show();
-			}, function(){
-				// 마우스 뗐을 때 : 숨긴다.
-				$("ul:first",this).hide();
-			});
-		});
-
-		
-
-
-	</script>	
 </body>
 </html>
