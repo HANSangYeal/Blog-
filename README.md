@@ -6,4 +6,4 @@ HSY's Blog
 ### 실행방법
 #### clone 후 실행
 _디자인 별로라고 하지마라_ **나름 고민해서 만들거다ㅠ**
-  
+![블로그 로고 imgFile](https://drive.google.com/file/d/1FJS5MFnygdlYFLHOkZqDmdMSa3KCieT8/view?usp=sharing)  
